@@ -5,6 +5,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import styles from './mealId.module.scss';
 import Loader from '../UI/Loader/Loader';
+
+
 interface Meal {
 	idMeal: string;
 	strMeal: string;

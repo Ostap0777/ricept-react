@@ -67,7 +67,6 @@ export default function MainPage() {
   const handleAddToFavorites = async (meal: Meal) => {
     try {
       await addToFavorites(meal);
-      alert('Страву додано до улюблених!');
     } catch (error) {
       console.error('Помилка при додаванні страви до улюблених:', error);
     }
@@ -101,10 +100,7 @@ export default function MainPage() {
                   </a>
                   <Link className={styles.meal__detail} to={`/meal/${meal.idMeal}`}>Детальніше</Link>
                   <img
-                    className={styles.meal__add__favorite}
-                    src="/img/free-icon-heart-shape-outline-25424 (1).png"
-                    alt="Add to favorites"
-                    onClick={() => handleAddToFavorites(meal)}
+                    className={styles.meal__add__favorite}  src="/img/free-icon-heart-shape-outline-25424 (1).png"  alt="Add to favorites" onClick={() => handleAddToFavorites(meal)}
                   />
                 </div>
               </div>
@@ -113,10 +109,7 @@ export default function MainPage() {
             <div>Страви відсутні</div>
           )}
         </div>
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={handlePageChange}
+        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange}
         />
       </div>
       <Footer />

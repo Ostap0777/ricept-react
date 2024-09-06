@@ -12,19 +12,13 @@ export default function FilterCategory({ onCategoryChange }: FilterCategoryProps
     <section className={styles.category__section}>
       <ul className={styles.category__items}>
         {categories.map(category => (
-          <li
-            key={category}
-            className={styles.category__item}
-            onClick={() => onCategoryChange(category)}
+          <li key={category} className={styles.category__item} onClick={() => onCategoryChange(category)}
           >
             {category}
           </li>
         ))}
-        <li
-          className={styles.category__item}
-          onClick={() => onCategoryChange(null)}
-        >
-          Всі
+        <li className={styles.category__item} onClick={() => onCategoryChange(null)}>
+          All
         </li>
       </ul>
     </section>

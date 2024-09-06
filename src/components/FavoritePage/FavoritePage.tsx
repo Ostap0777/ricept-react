@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import styles from './favorite.module.scss';
+import Loader from '../UI/Loader/Loader';
 
 
 interface Meal {
@@ -33,7 +34,7 @@ export default function FavoritePage() {
     queryFn: fetchFavorites
   });
 
-  if (isLoading) return <div>Завантаження...</div>;
+  if (isLoading) return <Loader/>;
   if (error) return <div>Помилка: {(error as Error).message}</div>;
 
   const favorites = data ?? [];
@@ -56,7 +57,7 @@ export default function FavoritePage() {
 
   return (
     <div className='favorite__container'>
-      <h1 className={styles.favorite__title}>Улюблені страви</h1>
+      <h1 className={styles.favorite__title}>Favorite dish</h1>
       <div className={styles.favorite__items}>
         {favorites.length > 0 ? (
           favorites.map((meal: Meal) => (
