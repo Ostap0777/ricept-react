@@ -1,0 +1,94 @@
+.favorite {
+	&__section {
+
+	}
+	&__title {
+		font-size: 34px;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	&__content__right {
+
+	}
+	&__content__left {
+
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		text-align: center;
+		justify-content: center;
+	}
+	&__item {
+		display: flex;
+	 background-color: blanchedalmond;
+	 justify-content:space-around;
+	 border-radius: 50px;
+	 padding: 20px 0px;
+	}
+
+}
+
+.meal {
+	&__content__right {
+	 display: flex;
+	 flex-direction: column;
+	 gap: 20px;
+	 
+	}
+	&__content__left {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__image {
+		width: 400px;
+		height: 300px;
+	}
+	&__name {
+		font-size: 28px;
+
+	}
+	&__category {
+
+	}
+	&__source {
+		width: 30px;
+		height: 30px;
+	}
+	&__ingredients {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+	}
+}
+
+.content {
+	&__ingredient {
+		background-color: rgb(26, 55, 56, 0.4);
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 20px;
+		border-radius: 30px;
+	}
+	&__title {
+		font-size: 24px;
+		color: aliceblue;
+	}
+	&__totalingradiets {
+		font-size: 30px;
+	}
+	&__total {
+		padding: 20px 0px;
+	}
+}
+
+.total{
+	&__count {
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,22 @@
+.category {
+	&__section {
+	
+
+	}
+	&__items {
+		padding: 20px 0px;
+		display: flex;
+		gap: 30px;
+	}
+	&__item {
+		font-size: 22px;
+		border: solid 2px #888888;
+		padding: 10px 20px;
+		border-radius: 20px;
+	}
+	&__item:hover {
+		background-color:aliceblue;
+		cursor: pointer;
+		border: solid 2px #626262;
+	}
+}
